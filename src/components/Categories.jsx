@@ -8,18 +8,15 @@ export default function Categories(props) {
   const [loading, setLoading] = useState("loading...");
   // Data for  the canadian communities
   const getMyDataCanada = () => {
+
     axios
       .get("https://univisionz.in/aal/public/api/homepagecanadaCommunities")
       .then(({ data }) => {
         console.log("My Data");
          console.log(data.data)
         setMyApiDataCanada(data.data);
-        setLoading();
-
-      })
-      .catch((err) => {});
-  };
-
+        setLoading(); })
+      .catch((err) => {});};
   // Data for  the USA communities
   const getMyData = () => {
     axios
@@ -40,7 +37,7 @@ export default function Categories(props) {
     <div className="container-fluid px-lg-0   px-md-1 px-sm-0 ">
       <div className="row g-2 g-5 g-md-3 g-sm-2 mx-2 my-5 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2 h-100">
         <h5 className={`text-start p-0 my-2  text-${props.mode === "light" ? "dark" : "light" }`}>EXPLORE </h5>
-        <h2  className="section_headings p-0 my-2 text-start">Active Adult Living™ Featured USA Communities</h2>
+        <h2  className="section_headings p-0 my-2 text-start">Featured USA Communities</h2>
         {loading ? (
           <div className="d-flex justify-content-center">
             <div className="spinner-border" role="status">
@@ -73,6 +70,7 @@ export default function Categories(props) {
                   </div>
                 </div>
               </div>
+           
             );
           })
         )}
@@ -81,7 +79,7 @@ export default function Categories(props) {
       <div className="row g-2 g-3 mx-2 my-5 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2 h- ">
         <h5 className={`text-start p-0 my-2  text-${ props.mode === "light" ? "dark" : "light"
           }`} >{" "} EXPLORE{" "} </h5>
-        <h2 className="text-start section_headings p-0 my-2"> Active Adult Living™ Featured Canadian Communities</h2>
+        <h2 className="text-start section_headings p-0 my-2"> Featured Canadian Communities </h2>
         {loading ? ( <div className="d-flex justify-content-center">
             <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
@@ -96,7 +94,7 @@ export default function Categories(props) {
                   <p className="card-text word-break ">
                     {data.community_desc.replace(/<\/?[^>]+(>|$)/g, "")}
                   </p>
-                  <a href="#" className="btn shadow rounded-pill secondary_btn">Read More</a>
+                  <a href="/" className="btn shadow rounded-pill secondary_btn">Read More</a>
                 </div>
               </div>
             </div>

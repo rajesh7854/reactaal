@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MapChart from './MapChart';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import PhoneIcon from '@mui/icons-material/Phone';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import PersonPinIcon from '@mui/icons-material/PersonPin';
+// import MapChart from './MapChart';
+// import Tabs from '@mui/material/Tabs';
+// import Tab from '@mui/material/Tab';
+// import PhoneIcon from '@mui/icons-material/Phone';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+// import PersonPinIcon from '@mui/icons-material/PersonPin';
 
 export default function Howitworks(props) {
-  const [value, setValue] = React.useState(0);
+  // const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event, newValue) => {
+  //   setValue(newValue);
+  // };
   return (
     <div>
     <div className="container-fluid px-lg-0  px-md-1 how_itworks px-sm-0 py-5 ">

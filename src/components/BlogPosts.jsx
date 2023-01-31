@@ -26,8 +26,7 @@ import axios from 'axios';
     <div className='container-fluid px-lg-0  px-md-1 px-sm-0 '>
     <div className="row g-2 g-3 mx-2 my-5 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2 h-100">
 <h5 className={`text-start p-0 my-2 text-${props.mode==='light'?'dark':'light'}`} >READ</h5>
-<h2 className="p-0 my-2 section_headings">Active Adult Living™ Featured Blog Articles
-</h2>
+<h2 className="p-0 my-2 section_headings">Latest Blog Articles</h2>
 {myApiDataBlog.map((data, index)=>{
 return(
   <div className="col-xl-3 col-xxl-3  blogs   col-sm-12 col-md-6 col-lg-3 mt-3" key={index}>

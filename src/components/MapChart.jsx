@@ -26,7 +26,7 @@ const offsets = {
 
 const MapChart = () => {
   return (
-    <div className="container-fluid  px-5  px-md-1 mb-xxl-5  mb-md-5 mb-xl-5 mb-xxl-2 px-sm-0 m-sm-0">
+    <div className="container-fluid  px-5  px-md-1   mb-xxl-5  mb-md-5 mb-xl-5 mb-xxl-2 px-sm-0 m-sm-0">
     <ComposableMap projection="geoAlbersUsa">
       <Geographies geography={geoUrl}>
         {({ geographies }) => (

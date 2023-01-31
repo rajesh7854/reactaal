@@ -3,27 +3,28 @@
 
 
 :root {
-  --primary_color:#042743;
-  --secondary_color:#24aae0;
-  --white:#fff;
+  --primary_color: #042743;
+  --secondary_color: #24aae0;
+  --white: #fff;
 }
 
-
 .badges {
-  background-color:var(--secondary_color);
-  color:var(--white);}
+  background-color: var(--secondary_color);
+  color: var(--white);
+}
 
+.secondary_btn {
+  background-color: var(--primary_color) !important;
+  color: var(--white);
+}
 
-
-
-.secondary_btn  {
-  background-color:var(--primary_color);
-  color:var(--white);}
 .section_headings {
-  color:var(--primary_color);}
-.how_itworks {
-  background:var(--primary_color);}
+  color: var(--primary_color);
+}
 
+.how_itworks {
+  background: var(--primary_color);
+}
 
 .App {
   text-align: center;
@@ -53,22 +54,22 @@
 
 .App-link {
   color: var(--secondary_color);
- ;
-
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.blank{
+.blank {
   color: rgb(32, 8, 246);
 }
+
 .drk:after {
   content: "";
   display: block;
@@ -87,143 +88,145 @@
 }
 
 .search_bar {
-  width:100%;
+  width: 100%;
   max-width: 700px;
-  background:rgb(255 255 255 / 56%);
-  display:flex;
-  align-items:center;
+  background: rgb(255 255 255 / 56%);
+  display: flex;
+  align-items: center;
   border-radius: 60px;
   backdrop-filter: blur(4px) saturate(180%);
-
 }
-.search_bar input  {
-         background-color: transparent;
-         flex:1;
-         border:0;
-         outline:none;
-         padding:20px;
-         font-size: 20px;
-         color:#000;
+
+.search_bar input {
+  background-color: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  color: #000;
 }
 
 .search_bar button .fa-search {
   width: 23px;
 }
-.search_bar button  {
-  border:0;
+
+.search_bar button {
+  border: 0;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background:var(--primary_color);
+  background: var(--primary_color);
   cursor: pointer;
 }
-                                  
+
 .search-text:focus {
-   outline:none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  outline: none;
 }
+
 .white_text {
-  color:#F0F0F0;
+  color: #F0F0F0;
 }
 
 .section-company-map span {
   display: flex;
   /* background-color:#283891; */
-  border:1px solid #F0F0F0;
+  border: 1px solid #F0F0F0;
   width: 30px;
   height: 30px;
   align-items: center;
   border-radius: 50px;
   font-size: 18px;
-  color:#c0c0c0;
+  color: #c0c0c0;
   justify-content: center;
 }
-
 
 svg {
   display: inline-block;
   vertical-align: middle;
 }
+
 .rsm-geography:hover {
-  fill:var(--primary_color);
- 
+  fill: var(--primary_color);
 }
 
 /* CSS for the maps component */
 .rsm-geography:focus {
   outline: none;
 }
+
 .rsm-geography text:hover {
-  color: white !important;;
+  color: white !important;
 }
 
 /* CSS for the Categories component */
- .ctgrs .card:hover {
-  background:#ffffff !important;
-  color:#000 !important;
-
-  transition: 100ms ;
-} 
+.ctgrs .card:hover {
+  background: #ffffff !important;
+  color: #000 !important;
+  transition: 100ms;
+}
 
 .ctgrs .card {
-  background:#ffffff !important;
-  color:var(--primary_color);
+  background: #ffffff !important;
+  color: var(--primary_color);
 }
 
+Footer {
+  background-color: var(--primary_color);
+}
 
-Footer { background-color:var(--primary_color); }
 .hr_footer {
-  width: 60px; background-color: #7c4dff; height: 2px;
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
 }
-.bottom_txt  {
+
+.bottom_txt {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .footer_text {
   background-color: #7c4dff;
-  
-  }
+}
+
 .footer_text p {
-font-size:14px;
-background-color: #7c4dff;
-
+  font-size: 14px;
+  background-color: #7c4dff;
 }
 
-
 .featured_image {
-  height:unset ;
+  height: unset;
   aspect-ratio: 1;
-  
 }
 
-
-@media (max-width:768px)  {
-.featured_image {
-  height: 100%;
-  aspect-ratio: 1;
-}}
-
-
-@media (max-width:1440px)  {
+@media (max-width:768px) {
   .featured_image {
     height: 100%;
     aspect-ratio: 1;
-  }}
+  }
+}
 
+@media (max-width:1440px) {
+  .featured_image {
+    height: 100%;
+    aspect-ratio: 1;
+  }
+}
 
-
-.ctrgpg .card-text , .canada .card-text  , .blogs .card-text   {
-  margin:20px 20px 20px 0 ;
+.ctrgpg .card-text,
+.canada .card-text,
+.blogs .card-text {
+  margin: 20px 20px 20px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
- }
-
-a {
-  text-decoration:none;
 }
 
+a {
+  text-decoration: none;
+}
 
 .black-overlay {
   width: 100%;
@@ -233,6 +236,7 @@ a {
   background-color: #00000073;
   border-radius: 16px;
 }
+
 .bg-overlay {
   position: relative;
   margin: auto;
@@ -245,10 +249,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  
   border-radius: 16px;
   background-position: center;
-  
 }
 
 .react-tabs {
@@ -307,162 +309,189 @@ a {
   text-align: center;
 }
 
-.tab_button_group  {
+.tab_button_group {
   justify-content: space-around !important;
 }
 
 
-.usa_button  , .Canada_button{
+.usa_button,
+.Canada_button {
   border: none;
-    
+
 
 }
 
 /* CSS for the canada map */
 
 #BC #British\ Columbia:hover {
-  fill:#283891 !important;  
+  fill: #283891 !important;
 }
+
 #AB #Alberta:hover {
-  fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #SK #Saskatchewan:hover {
-  fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #MB #Manitoba:hover {
-     fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #NL #Newfoundland\ and\ Labrador:hover {
-     fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #NB #New\ Brunswick:hover {
-    fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #ON #Ontario:hover {
-    fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #QC #Quebec:hover {
-       fill:#283891 !important;
+  fill: #283891 !important;
 }
 
 #NS #Nova\ Scotia:hover {
-    fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #YT #Yukon\ Territories:hover {
-    fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #NT #Northwest\ Territories:hover {
-    fill:#283891 !important;
+  fill: #283891 !important;
 }
+
 #NU #Nunavut:hover {
-       fill:#283891 !important;
-    
+  fill: #283891 !important;
+
 }
 
 #PE #Prince\ Edward\ Island:hover {
-  fill:#283891 !important;
-  
+  fill: #283891 !important;
+
 }
 
 #PE #Prince\ Edward\ Island {
-  fill:#DDDDDD !important;
-  
+  fill: #DDDDDD !important;
+
 }
 
 #ON #Ontario {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #NB #New\ Brunswick {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
 
 #BC #British\ Columbia {
-  fill:#DDDDDD !important; 
+  fill: #DDDDDD !important;
 }
+
 #AB #Alberta {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #SK #Saskatchewan {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #MB #Manitoba {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #NL #Newfoundland\ and\ Labrador {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #NB #New\ Brunswick {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #ON #Ontario {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #QC #Quebec {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
 
 #NS #Nova\ Scotia {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #YT #Yukon\ Territories {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #NT #Northwest\ Territories {
-  fill:#DDDDDD !important;
+  fill: #DDDDDD !important;
 }
+
 #NU #Nunavut {
-  fill:#DDDDDD !important;
-    
+  fill: #DDDDDD !important;
+
 }
 
 #PE #Prince\ Edward\ Island:hover {
-  fill:#283891 !important;
-  
+  fill: #283891 !important;
+
 }
+
 @media(max-width:1024px) {
-svg.canada-map {
-  width: 700px;
-  height: 700px;
-}}
+  svg.canada-map {
+    width: 700px;
+    height: 700px;
+  }
+}
 
 @media (max-width:768px) {
-svg.canada-map {
+  svg.canada-map {
     width: 700px;
     height: 50%;
-}}
+  }
+}
 
 
 
 @media(max-width:320px) {
   .search_bar input {
-     padding:0;
-     max-width:95%;
+    padding: 0;
+    max-width: 95%;
 
   }
-  
+
 }
 
 
 @media(max-width:767px) {
   .search_bar {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
   }
 }
 
 
 @media(min-width:1024px) {
-.logo    {
-  width:200px !important;
-}}
+  .logo {
+    width: 200px !important;
+  }
+}
 
 button.active img {
-  border:3px solid #283891;
-  border-radius:50%;
+  border: 3px solid #283891;
+  border-radius: 50%;
 
 }
-.maps_background  {
-      background-color:#04274308;
+
+.maps_background {
+  background-color: #04274308;
 }
 
 
@@ -471,7 +500,191 @@ button.active img {
   background-color: #0e3d63;
 }
 
-.content_box.card {
-  border: 0px;
-  border-radius: 20px;
+/* Searchbar for the places pages heder  */
+
+#searchBox {
+  border-radius: 55px;
+  background-color: #f0f3ff;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1 rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+input {
+  font-size: 20px;
+  width: 500px;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+#icon {
+  width: 50px;
+  cursor: pointer;
+}
+
+#secondIcond {
+  width: 70px;
+}
+
+.create_accout_button {
+  border: 2px solid var(--white);
+  color: var(--white);
+
+}
+
+.right_section_con li::marker {
+  content: "";
+
+}
+
+.Active_tab {
+  border-bottom: 3px solid var(--primary_color);
+  padding: 7px 10px;
+  max-width: 200px;
+  width: 50%;
+  margin: 10px;
+  cursor: auto;
+  /* color:white !important; */
+}
+
+.Active_content {
+  display: block;
+}
+
+.tab_hidden {
+  display: none;
+}
+
+.nav-item a.tab {
+  padding: 7px 10px;
+  margin: 10px;
+  color: #3c3e43;
+}
+
+.tab_bar {
+  margin: 10px;
+
+}
+
+.tab_bar a {
+  color: rgb(0, 0, 0);
+
+}
+
+ul.itenary {
+  padding-inline-start: unset;
+}
+
+
+
+.tabs_itms {
+  display: inline-flex;
+}
+
+.tabs_itms li {
+  list-style-type: none;
+}
+
+.card-header {
+  background-color: transparent;
+}
+
+
+/* .tabs_it {
+   
+    padding:5px 10px;
+    border-radius:10px;
+    margin:auto 10px;
+} */
+
+
+.user {
+  background-color: red;
+  display: flex;
+
+}
+.user p {
+  display: block;
+  background: white;
+  color: #000;}
+  
+.labeling {
+  color:white !important;
+}
+
+
+.main-app {
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  
+ }
+
+ .main-app.m-auto {
+  position: absolute;
+  background: #042743;
+  top: 71%;
+  left: 10%;
+  width: 80%;
+  padding:20px auto;
+  list-style-type:none;
+}
+.search_list {
+  list-style-type:none;
+
+}
+
+
+.paginatioBttns {
+  width: 80%;
+  height:40px;
+  list-style-type:none;
+  display: flex;
+  justify-content: center;
+}
+.paginatioBttns a{
+  padding:10px;
+  margin:8PX;
+  border-radius: 5px;
+  border:1px solid #2b2eff;
+  color:#2b2eff;
+}
+.pagination {
+  margin-top: 45px;
+  margin-left: -40px;
+  display: flex;
+  list-style: none;
+  outline: none;
+ }
+  
+ .pagination>.active>a {
+  background-color: #042743;
+  color: #fff;
+ }
+  
+ .pagination>li>a {
+  /* border: 1px solid #042743; */
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  color:#042743;
+ }
+  
+ .pagination>li>a, .pagination>li>span {
+  color: #042743;
+  background-color: #0427431c;
+ }
+
+ .home_searchbar {
+  background-color: transparent !important;
+  border:none !important  ;
+ }
+
+ .home_searchbar  .form-control:focus {
+  color: none; 
+  background-color:unset !important;
+  border-color:unset !important;
+  outline:unset !important;
+  box-shadow:unset !important;
 }

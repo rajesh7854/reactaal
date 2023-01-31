@@ -21,7 +21,7 @@ export default function FeaturedCommunities(props) {
   }, []);
 
   return (
-    <div className="container-fluid px-lg-0  px-md-1 how_itworks px-sm-0 py-2 py-xxl-2 py-xl-2 py-md-3 ">
+    <div className="container-fluid px-lg-0  px-md-1 how_itworks px-sm-0 py-3 py-xl-5 py-xxl-5 py-xl-5 py-md-3 ">
       <div className="row g-2 g-3 ctgrs py-xl-5 py-xxl-5 py-xl-5 py-md-3 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2">
       {loading ?   (
           <div className="d-flex justify-content-center ">
@@ -35,9 +35,9 @@ export default function FeaturedCommunities(props) {
           return (
             <div className="col-xl-3 col-xxl-3 col-lg-4  col-md-6  ntn_communite" key={index}>
           <a href={`https://aal.univisionz.in/${data.url}`}>
-              <div className="card secondary_btn rounded-3 p-1 bg-secondary  shadow">
+              <div className="card secondary_btn rounded-3 p-3 bg-secondary  shadow h-100 ">
               <i className="fa fa-people-group me-4  ">   </i>
-                <div className="fs-6 ps-4 py-2 word-break"> {data.name} </div>
+                <div className="card-body fs-6 word-break"> {data.name} </div>
                 <i className="fa-solid fa-arrow-right text-end  "></i>
               </div>
               </a>

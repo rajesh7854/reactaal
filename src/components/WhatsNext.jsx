@@ -8,9 +8,9 @@ export default function WhatsNext(props) {
       <div className="row g-2 g-3 mx-2 my-5 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2 h-100">
 
         <div className="col-lg-6 col-xl-6 col-md-12 col-sm-12 ">
-          {/* <h5 className={`text-start  text-${props.mode === 'light' ? 'dark' : 'light'}`}>EXPLORE</h5> */}
-          <h2 className="text-start section_headings">Embrace What’s Next</h2>
-          <p className={`text-start  text-${props.mode === 'light' ? 'dark' : 'light'}`}>Since 1998, Active Adult Living™ has been the leading source of information on active senior living communities in the United States and Canada. Our database includes new construction to established 55 plus and active adult communities, featuring builders like Del Webb, Shea Homes, Lennar, D.R. Horton, Taylor Morrison, PulteGroup, Toll Brothers, and more. Follow us and join our mailing list for free offers and the latest information on the best retirement living options and tips in the United States and Canada.</p>
+          <h5 className={`text-start  text-${props.mode === 'light' ? 'dark' : 'light'}`}>EXPLORE</h5>
+          <h2 className="text-start section_headings">Discover Whats Next</h2>
+          <p className="text-start text-dark">We're changing the way people 55 and older are searching for their perfect next place. With a national network of hand-selected real estate experts, plus comprehensive information, unbiased content, and on-the-go insight about thousands of communities across the country, we're a trusted resource paving the way from here to home. Whether you're interested in a low-maintenance single-level residence, an active lifestyle or age-qualified community, an intimate enclave, or anything in between, we can help you make your next move the best one yet.</p>
           <div className="d-grid gap-2 mt-5">
             <button className="btn  w-75  shadow rounded-pill secondary_btn w-md-50 mb-5 text-sm-left text-start text-md-start text-lg-start text-xl-start text-xxl-center" type="button">Learn more about Actuve Adult Living communities</button>
 
@@ -18,7 +18,7 @@ export default function WhatsNext(props) {
         </div>
         <div className="col-lg-6 col-xl-6 col-md-12 col-sm-12">
           <h5 className={`text-start  text-${props.mode === 'light' ? 'dark' : 'light'}`}> EXPLORE </h5>
-          <h2 className="text-start section_headings">JOIN US For Special Offers </h2>
+          <h2 className="text-start section_headings">Get Weekly Updates</h2>
           <form action="/action_page.php">
             <div className="mb-3 mt-3">
               <label htmlFor="email" className="form-label">First Name</label>

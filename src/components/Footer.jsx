@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import logo from './images/AAL-logo-without-U.png'
 
 
@@ -20,23 +19,35 @@ function Footer() {
 
 
 
-            <h4 className="mb-4"> Search for Active Adult Living™ Communities </h4>
+            <h4 className="mb-4"> Search for Active Adult communities </h4>
 
             <div className="container-flex">
               <div className="me-5">
                 <span>Get connected with us on social networks: </span>
               </div>
               <div className='my-4'>
-                <a href="" className="text-white me-4">
+                <a href="/" className="text-white me-4">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="" className="text-white me-4">
+                <a href="/" className="text-white me-4">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="/" className="text-white me-4">
+                  <i className="fab fa-google"></i>
+                </a>
+                <a href="/" className="text-white me-4">
                   <i className="fab fa-instagram"></i>
+                </a>
+                <a href="/" className="text-white me-4">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="/" className="text-white me-4">
+                  <i className="fab fa-github"></i>
                 </a>
               </div>
               <div className='row'>
                 <div className='col-xl-10 col-lg-10 col-md-12 col-sm-12 united_states'>
-                  <h6 className="text-uppercase fw-bold text-start">Active Adult Living™ in United States</h6>
+                  <h6 className="text-uppercase fw-bold text-start">UNITED STATES </h6>
 
 
                   <div className='col'>
@@ -212,8 +223,7 @@ function Footer() {
 
 
                 <div className='col-lg-2 col-xl-2 col-md-12 col-sm-12'>
-                  <h6 className="text-uppercase text-start  justify-content-start   fw-bold">Active Adult LIving™ in Canada
-</h6>
+                  <h6 className="text-uppercase text-start  justify-content-start   fw-bold">CANADA  </h6>
                   <div className="row align-items-center   ">
 
                     <div className="col text-start my-2">
@@ -279,17 +289,17 @@ function Footer() {
           <div className='container-flex px-lg-0  px-md-1 px-sm-0'>
             <div className='row g-3 mx-2 my-5 px-lg-0 px-xxl-5 px-md-2 px-sm-2 mx-md-2 mx-sm-2  mx-lg-5 mx-xxl-5 mx-sm-2 mx-md-2 h-100'>
               <div className='col-xl-4 col-xxl-2 col-md-12 col-sm-12 col-lg-12 justify-content-md-center justify-content-center d-flex  align-item-center'>
-                <a className="" href="#">
+                <a className="" href="/">
                   <img src={logo} alt="" width="100" height="45" className="d-inline-block align-text-top " /></a>
               </div>
               <div className='col-xl-8 col-xxl-10 col-sm-12 col-12 col-lg-12 col-md-12'>
 
                 <div className='row flex-sm-column  flex-column flex-md-column flex-lg-row flex-xl-row flex-xxl-row'>
-                  <div className='col menu_item d-flex justify-content-center'>  <a href='#'></a> Newsletters </div>
-                  <div className='col menu_item d-flex justify-content-center'>  <a href='#'></a> Advertising Opportunities </div>
-                  <div className='col menu_item d-flex justify-content-center'>  <a href='#'></a> Contact Us </div>
-                  <div className='col menu_item d-flex justify-content-center'>  <a href='#'></a> Privacy Policy </div>
-                  <div className='col menu_item d-flex justify-content-center'>  <a href='#'></a> Terms Of Use </div>
+                  <div className='col menu_item d-flex justify-content-center'>  <a href='/'>Newsletters</a>  </div>
+                  <div className='col menu_item d-flex justify-content-center'>  <a href='/'> Advertising Opportunities</a> </div>
+                  <div className='col menu_item d-flex justify-content-center'>  <a href='/'>Contact Us</a>  </div>
+                  <div className='col menu_item d-flex justify-content-center'>  <a href='/'>Privacy Policy</a>  </div>
+                  <div className='col menu_item d-flex justify-content-center'>  <a href='/'> Terms Of Use </a></div>
                 </div>
               </div>
             </div>
